@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cazas - MIL-TECH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">MIL-TECH</div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tanques.html">Tanques</a></li>
+                <li><a href="cazas.html" class="active">Cazas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN 1: A-10 THUNDERBOLT II -->
+    <section class="vehicle-section" style="background-image: url('img/a10_background.jpg');">
+        <div class="vehicle-container">
+            
+            <div class="info-box">
+                <h2>A-10 Thunderbolt II</h2>
+                <p class="subtitle">Aviación de Ataque a Tierra <span class="sep">|</span> Estados Unidos <span class="sep">|</span> 1977</p>
+                <p><strong>Contexto de aparición y análisis técnico:</strong> Desarrollado por Fairchild-Republic a través del programa A-X de la USAF a finales de los 60. Nació tras analizar la vulnerabilidad de los aviones supersónicos en misiones CAS en Vietnam. Diseñado mecánicamente alrededor del icónico <span class="accent">cañón rotativo GAU-8/A Avenger de 30 mm</span>, capaz de disparar munición de uranio empobrecido a 3.900 dpm. Cuenta con una <span class="accent">bañera blindada de titanio</span> que protege al piloto de impactos directos de proyectiles antiaéreos de hasta 23 mm.</p>
+                
+                <ul class="specs-list">
+                    <li><strong>Motores:</strong> 2× General Electric TF34-GE-100 turbofán (<span class="accent">9.065 lbf</span> de empuje c/u)</li>
+                    <li><strong>Armamento:</strong> GAU-8/A Avenger de 30 mm + 11 puntos duros bajo las alas</li>
+                    <li><strong>Velocidad y Techo:</strong> <span class="accent">706 km/h (Mach 0.56)</span> | Techo de servicio de 13.700 m</li>
+                </ul>
+            </div>
+
+            <div class="media-box">
+                <img id="main-a10" class="main-img" src="img/a10_1.avif" alt="A-10 Thunderbolt II">
+                <div class="thumb-container">
+                    <img class="thumb-img" src="img/a10_background.jpg" onclick="document.getElementById('main-a10').src=this.src" alt="Fondo">
+                    <img class="thumb-img" src="img/a10_1.avif" onclick="document.getElementById('main-a10').src=this.src" alt="Vista 1">
+                    <img class="thumb-img" src="img/a10_2.jpg" onclick="document.getElementById('main-a10').src=this.src" alt="Vista 2">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: F-22 RAPTOR -->
+    <section class="vehicle-section" style="background-image: url('img/f22_backgroud.jpg');">
+        <div class="vehicle-container">
+            
+            <div class="info-box">
+                <h2>F-22 Raptor</h2>
+                <p class="subtitle">Caza de Superioridad Aérea <span class="sep">|</span> Estados Unidos <span class="sep">|</span> 2005</p>
+                <p><strong>Contexto de aparición y análisis técnico:</strong> Desarrollado por Lockheed Martin y Boeing a través del programa ATF para garantizar la superioridad aérea frente a cazas soviéticos avanzados. Reconocido como el <span class="accent">primer caza de quinta generación del mundo</span>, integra características <span class="accent">stealth (baja observabilidad)</span>, capacidad de <span class="accent">supercrucero</span> y toberas con empuje vectorial bidimensional. Su avanzado <span class="accent">radar AESA AN/APG-77</span> permite la detección y enganche de múltiples objetivos BVR.</p>
+                
+                <ul class="specs-list">
+                    <li><strong>Motores:</strong> 2× Pratt & Whitney F119-PW-100 con toberas orientables</li>
+                    <li><strong>Velocidad y Prestaciones:</strong> <span class="accent">Mach 2.25 (2.414 km/h)</span> | Supercrucero a Mach 1.82</li>
+                    <li><strong>Aviónica:</strong> Radar AESA AN/APG-77 + bahías internas de armas</li>
+                </ul>
+            </div>
+
+            <div class="media-box">
+                <img id="main-f22" class="main-img" src="img/f22_1.jpg" alt="F-22 Raptor">
+                <div class="thumb-container">
+                    <img class="thumb-img" src="img/f22_backgroud.jpg" onclick="document.getElementById('main-f22').src=this.src" alt="Fondo">
+                    <img class="thumb-img" src="img/f22_1.jpg" onclick="document.getElementById('main-f22').src=this.src" alt="Vista 1">
+                    <img class="thumb-img" src="img/f22_2.webp" onclick="document.getElementById('main-f22').src=this.src" alt="Vista 2">
+                    <img class="thumb-img" src="img/f22_3.jpeg" onclick="document.getElementById('main-f22').src=this.src" alt="Vista 3">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

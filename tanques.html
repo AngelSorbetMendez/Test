@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanques - MIL-TECH</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">MIL-TECH</div>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tanques.html" class="active">Tanques</a></li>
+                <li><a href="cazas.html">Cazas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SECCIÓN 1: LEOPARD 2A7 -->
+    <section class="vehicle-section" style="background-image: url('img/leopard2a7_background.jpg');">
+        <div class="vehicle-container">
+            
+            <div class="info-box">
+                <h2>Leopard 2A7</h2>
+                <p class="subtitle">Tanque de Combate Principal <span class="sep">|</span> Alemania <span class="sep">|</span> 2014</p>
+                <p><strong>Contexto de aparición y análisis técnico:</strong> Concebido como la evolución definitiva de la plataforma Leopard 2 desarrollada por Krauss-Maffei Wegmann. Surgió tras las lecciones operativas extraídas por el ejército alemán en conflictos asimétricos modernos. La versión 2A7 optimiza la protección balística pasiva e incorpora <span class="accent">módulos de blindaje modular mejorados</span> contra cargas huecas y proyectiles cinéticos (APFSDS). Destaca su <span class="accent">arquitectura electrónica completamente digitalizada</span>, un sistema de refrigeración auxiliar independizado (APU) y la capacidad de emplear <span class="accent">munición programable HE de 120 mm</span> desde su cañón Rheinmetall L/55.</p>
+                
+                <ul class="specs-list">
+                    <li><strong>Motor:</strong> MTU MB 873 Ka-501 V12 diésel de 47,6 litros (<span class="accent">1.500 CV</span>)</li>
+                    <li><strong>Armamento:</strong> Cañón de ánima lisa Rheinmetall L/55 de 120 mm + Ametralladora MG3</li>
+                    <li><strong>Velocidad y Alcance:</strong> <span class="accent">72 km/h</span> máximo en carretera | Autonomía de 450 km</li>
+                </ul>
+            </div>
+
+            <div class="media-box">
+                <img id="main-leopard" class="main-img" src="img/leopard2a7_1.jpg" alt="Leopard 2A7">
+                <div class="thumb-container">
+                    <img class="thumb-img" src="img/leopard2a7_background.jpg" onclick="document.getElementById('main-leopard').src=this.src" alt="Fondo">
+                    <img class="thumb-img" src="img/leopard2a7_1.jpg" onclick="document.getElementById('main-leopard').src=this.src" alt="Vista 1">
+                    <img class="thumb-img" src="img/leopard2a7_2.jpg" onclick="document.getElementById('main-leopard').src=this.src" alt="Vista 2">
+                    <img class="thumb-img" src="img/leopard2a7_3.jpg" onclick="document.getElementById('main-leopard').src=this.src" alt="Vista 3">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECCIÓN 2: M1 ABRAMS -->
+    <section class="vehicle-section" style="background-image: url('img/abrams_background.jpg');">
+        <div class="vehicle-container">
+            
+            <div class="info-box">
+                <h2>M1 Abrams</h2>
+                <p class="subtitle">Tanque de Combate Principal <span class="sep">|</span> Estados Unidos <span class="sep">|</span> 1980</p>
+                <p><strong>Contexto de aparición y análisis técnico:</strong> Diseñado por Chrysler Defense e introducido en servicio activo en 1980 para reemplazar a los M60 Patton frente a las divisiones del Pacto de Varsovia. Su diseño supuso una revolución gracias al uso de <span class="accent">blindaje compuesto tipo Chobham</span> reforzado con capas de <span class="accent">uranio empobrecido</span> en versiones posteriores. Su sistema motriz se apoya en una potente <span class="accent">turbina de gas Honeywell AGT1500</span> que ofrece una aceleración inusual para un vehículo de más de 60 toneladas, complementado con una suite óptica térmica digitalizada.</p>
+                
+                <ul class="specs-list">
+                    <li><strong>Motor:</strong> Honeywell AGT1500 Turbina de gas policarburante (<span class="accent">1.500 CV</span>)</li>
+                    <li><strong>Armamento:</strong> Cañón de ánima lisa M256 de 120 mm + Ametralladora M2HB calibre .50</li>
+                    <li><strong>Velocidad y Alcance:</strong> <span class="accent">67 km/h</span> en carretera | Autonomía de 426 km</li>
+                </ul>
+            </div>
+
+            <div class="media-box">
+                <img id="main-abrams" class="main-img" src="img/abrams_1.webp" alt="M1 Abrams">
+                <div class="thumb-container">
+                    <img class="thumb-img" src="img/abrams_background.jpg" onclick="document.getElementById('main-abrams').src=this.src" alt="Fondo">
+                    <img class="thumb-img" src="img/abrams_1.webp" onclick="document.getElementById('main-abrams').src=this.src" alt="Vista 1">
+                    <img class="thumb-img" src="img/abrams_2.jpg" onclick="document.getElementById('main-abrams').src=this.src" alt="Vista 2">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</body>
+</html>

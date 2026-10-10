@@ -1,0 +1,257 @@
+:root {
+  --bg-color: #0d1117;
+  --header-bg: #161b22;
+  --accent-color: #d4af37;
+  --text-main: #f0f6fc;
+  --text-muted: #8b949e;
+  --border-color: #30363d;
+}
+
+/* Ocultar barra de desplazamiento vertical sin bloquear el movimiento */
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+/* Header y Navegación superior */
+header {
+  background-color: var(--header-bg);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 3rem;
+  max-width: 1400px;
+  margin: 0;
+  padding: 1.1rem 2.5rem;
+}
+
+/* Logo MIL-TECH en color de acento */
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+nav a:hover, nav a.active {
+  color: var(--text-main);
+  border-bottom: 2px solid var(--accent-color);
+  padding-bottom: 4px;
+}
+
+/* Clases de acento y separadores */
+.sep {
+  color: var(--accent-color);
+  font-weight: bold;
+  margin: 0 0.3rem;
+}
+
+.accent {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* Sección del Inicio */
+.hero-index {
+  min-height: calc(100vh - 65px);
+  width: 100%;
+  background-size: cover;
+  background-position: center 75%;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(13, 17, 23, 0.55);
+  z-index: 1;
+}
+
+/* Botones principales de la Portada con efecto hover dorado */
+.btn-hero {
+  background: rgba(22, 27, 34, 0.85);
+  color: var(--text-main);
+  border: 1px solid var(--border-color);
+  padding: 0.9rem 2rem;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+  transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, color 0.25s ease;
+}
+
+.btn-hero:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.25);
+}
+
+/* Secciones de Vehículos */
+.vehicle-section {
+  min-height: 90vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 2rem;
+  border-bottom: 1px solid var(--border-color);
+  position: relative;
+}
+
+.vehicle-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(13, 17, 23, 0.75);
+  z-index: 1;
+}
+
+.vehicle-container {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1350px;
+  margin: 0 auto;
+  gap: 4rem;
+}
+
+/* Información del vehículo */
+.info-box {
+  flex: 1;
+  max-width: 600px;
+  background: transparent !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+.info-box h2 {
+  margin: 0 0 0.5rem 0;
+  color: var(--accent-color);
+  font-size: 2.8rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+.subtitle {
+  color: var(--accent-color);
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.info-box p {
+  color: #c9d1d9;
+  line-height: 1.65;
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.specs-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  line-height: 1.9;
+  color: #c9d1d9;
+  font-size: 0.98rem;
+}
+
+.specs-list strong {
+  color: var(--text-main);
+}
+
+/* Galería de imágenes */
+.media-box {
+  flex: 1.1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.main-img {
+  width: 100%;
+  height: 350px;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--border-color);
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.main-img:hover {
+  transform: scale(1.015);
+  border-color: var(--accent-color);
+}
+
+.thumb-container {
+  display: flex;
+  gap: 12px;
+  margin-top: 14px;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.thumb-img {
+  width: 95px;
+  height: 60px;
+  cursor: pointer;
+  border-radius: 6px;
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, border-color 0.2s, filter 0.2s;
+  filter: brightness(0.85);
+}
+
+.thumb-img:hover {
+  transform: translateY(-3px) scale(1.03);
+  border-color: var(--accent-color);
+  filter: brightness(1.1);
+}
